@@ -8,7 +8,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<Navigate to="/cart" replace />} />
+        <Route index element={<Navigate to="/cart" />} />
         <Route path="cart" element={<ShoppingCartPage />} />
         <Route path="todos" element={<TodoPage />} />
       </Route>

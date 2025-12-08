@@ -1,19 +1,9 @@
 
-import { Routes, Route, Navigate } from 'react-router-dom';
-import Layout from './components/Layout';
-import ShoppingCartPage from './pages/ShoppingCartPage';
-import TodoPage from './pages/TodoPage';
+import React from "react";
+import GraphQLDemo from "./GraphQLDemo_Jeshwin";
 
 function App() {
-  return (
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Navigate to="/cart" replace />} />
-        <Route path="cart" element={<ShoppingCartPage />} />
-        <Route path="todos" element={<TodoPage />} />
-      </Route>
-    </Routes>
-  );
+  return <GraphQLDemo />;
 }
 
 export default App;
